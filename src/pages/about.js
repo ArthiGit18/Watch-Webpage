@@ -2,15 +2,17 @@ import React from 'react'
 
 const Aboutv1 = () => {
     return (
-        <div className="video-background">
-            <video autoPlay muted loop className="video-bg">
-                <source src="/assets/video/9846-221477041_medium.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <div className="about">
+
+        <div className="container">
+            <div className='about_wrapper'>
                 {/* <img src="/assets/watch/1.png" alt="watch" /> */}
-                <h1>Step Into the World of Exquisite Watches</h1>
-                <p> See Our Collection!</p>
+                <div className='about_content'>
+                    <h1>Step Into the World of Exquisite Watches</h1>
+                    <p> See Our Collection!</p>
+                </div>
+                <div className='about_img'>
+                    <img src="/assets/watch/2.png" alt="watch" />
+                </div>
             </div>
         </div>
     )
