@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
+$primary-color: #254336;
+$text-color: #FFF8E8;
+
+:root {
+    --font-small: 15px;
+    --font-medium: 20px;
+    --font-large: 40px;
+    --font-subheader: 35px;
+  }
+
+.header_container {
+//   height: 100px;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 10px solid #254336;
+  background-color: #1f3b2c;
+
+  .headerV1{
+    font-size: var(--font-large);
+}
+
+.breadcrumb_container{
+    .breadcrumds Link{
+        font-size: var(--font-medium);
+    }
+}
+}
+
+.aboutV1_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+    align-items: center;
+    margin: 20px 0;
+
+    .aboutV1_content{
+        font-size: var(--font-small);
+        font-family: var(--font-family-primary);
+    }
+}
+
+.shopV1_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    // row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+
+    .shopV1_list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+        width: auto;
+
+
+        .list_img1 img{
+            height: 180px;
+            width: auto;
+            border-radius: 10px;
+            margin: 10px;
+
+        }
+        .list_content p{
+            font-size: 15px;
+            margin: 10px;
+            text-align: justify;
+            font-weight: 700;
+        }
+        .list_actions{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+
+            Button{
+                color: #1f3b2c;
+            }
+
+            .list_actions_section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                // margin: 10px;
+            }
+
+            .list_actions_section Button{
+                background: #1f3b2c;
+                color: #FFF8E8;
+            }
+        }
+    }
+}
+
+.cartV1_wrapper{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 50px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // align-items: center;
+    // justify-content: start;
+    display: flex;
+    column-gap: 20px;
+
+    .cartV1_img img{
+        height: 200px;
+        width: auto;
+        border-radius: 10px;
+    }
+
+    .cart_Details{
+
+        .cart_details_chart{
+            margin: 30px 0;
+        }
+    }
+}
+
+

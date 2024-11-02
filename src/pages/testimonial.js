@@ -34,18 +34,19 @@ const Testimonial = () => {
     };
 
     return (
-
-        <div className="testimonial-container">
-            <Slider {...settings}>
-                {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="testimonial-item">
-                        <div className='testimonial_content'>
-                            <p>"{testimonial.text}"</p>
-                            <h4>- {testimonial.author}</h4>
+        <div className='container'>
+            <div className="testimonial-container">
+                <Slider {...settings}>
+                    {testimonials.map((testimonial) => (
+                        <div key={testimonial.id} className="testimonial-item">
+                            <div className='testimonial_content'>
+                                <p>"{testimonial.text}"</p>
+                                <h4>- {testimonial.author}</h4>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </div>
         </div>
     );
 };
