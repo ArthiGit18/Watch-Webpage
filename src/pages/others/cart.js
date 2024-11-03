@@ -1,6 +1,9 @@
 import React from 'react'
 import Headerv1 from '../headers/headerv1'
 import Navbar from '../navbar'
+import Address from './address';
+import Payment from './payment';
+import Selecteditem from './selecteditem';
 
 const Cart = () => {
   return (
@@ -16,30 +19,19 @@ const Cart = () => {
       />
       <div className='container'>
         <div className='cartV1_wrapper'>
-          <div className='cartV1_img'>
-            <img src="/assets/watch/6.jpg" href="Watch" />
+
+          <div>
+            <Selecteditem />
           </div>
-          <div className="cart_Details">
-            <h2>Watch</h2>
-            <p>Brand</p>
-            <div className='cart_details_chart'>
-              <table>
-                <tr>
-                  <th>Order Summary</th>
-                </tr>
-                <tr>
-                  <td>Name</td>
-                  <td>Quatity</td>
-                  <td>Price</td>
-                </tr>
-                <tr>
-                  <td>Flexible MenZ Watch - Quality Branded</td>
-                  <td>2</td>
-                  <td>29,000</td>
-                </tr>
-              </table>
-            </div>
+
+          <div className='cart_address'>
+            <Address />
           </div>
+          
+          <div className='cart_payment'>
+            <Payment />
+          </div>
+
         </div>
       </div>
     </div>

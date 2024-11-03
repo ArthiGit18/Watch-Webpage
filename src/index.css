@@ -92,7 +92,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .about_wrapper {
@@ -337,4 +337,22 @@ p {
   text-align: center;
   background-color: #254336;
   color: #FFF8E8;
+}
+
+
+/*  */
+
+.pay_Options{
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+}
+
+
+.panel1-header{
+  background-color: #FFF8E8;
+ 
+}
+
+.accordtion{
+  margin: 30px 0;
 }
